@@ -1,0 +1,23 @@
+{
+  "name": "vitejs-plugin-electron",
+  "version": "1.3.0",
+  "description": "Integrate Vite and Electron",
+  "main": "dist/index.js",
+  "repository": "https://github.com/caoxiemeihao/vite-plugin-electron.git",
+  "author": "草鞋没号 <308487730@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && tsc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^16.x",
+    "typescript": "^4.x",
+    "vite": "^2.x"
+  },
+  "keywords": [
+    "vite",
+    "plugin",
+    "electron"
+  ]
+}
