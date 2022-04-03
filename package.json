@@ -1,19 +1,22 @@
 {
-  "name": "vitejs-plugin-electron",
-  "version": "1.3.0",
-  "description": "Integrate Vite and Electron",
+  "name": "vite-plugin-electron-quick-start",
+  "version": "0.0.0",
+  "description": "vite-plugin-electron-quick-start",
   "main": "dist/index.js",
-  "repository": "https://github.com/caoxiemeihao/vite-plugin-electron.git",
+  "repository": "https://github.com/caoxiemeihao/vite-plugin-electron-quick-start.git",
   "author": "草鞋没号 <308487730@qq.com>",
   "license": "MIT",
+  "private": true,
   "scripts": {
-    "build": "rm -rf dist && tsc"
+    "dev": "vite"
   },
-  "dependencies": {},
+  "dependencies": {
+    "vue": "^3.2.31"
+  },
   "devDependencies": {
-    "@types/node": "^16.x",
-    "typescript": "^4.x",
-    "vite": "^2.x"
+    "@vitejs/plugin-vue": "^2.3.1",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.1"
   },
   "keywords": [
     "vite",
