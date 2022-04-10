@@ -1,14 +1,14 @@
+import path from 'path'
 import { app, BrowserWindow } from 'electron'
 
 let win: BrowserWindow
 
 function createWindow() {
   win = new BrowserWindow({
-    x: 0,
-    y: 100,
     webPreferences: {
       contextIsolation: false,
       nodeIntegration: true,
+      preload: path.join(__dirname, '../electron-preload/index.js'),
     },
   })
 
