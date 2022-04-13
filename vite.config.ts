@@ -10,4 +10,7 @@ export default defineConfig({
     electron(electronConfig),
     electronRenderer(),
   ],
+  build: {
+    emptyOutDir: false,
+  },
 })
