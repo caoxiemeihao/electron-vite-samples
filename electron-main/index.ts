@@ -5,6 +5,8 @@ let win: BrowserWindow
 
 function createWindow() {
   win = new BrowserWindow({
+    frame: false,
+    transparent: true,
     webPreferences: {
       contextIsolation: false,
       nodeIntegration: true,

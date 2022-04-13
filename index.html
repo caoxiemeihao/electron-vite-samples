@@ -6,7 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
+  <style>
+    body {
+      margin: 0;
+      padding-top: 24px;
+      height: 100vh;
+      line-height: 1.4;
+      background: linear-gradient(140deg, transparent, #6bd1fe, #bd34fe);
+    }
+    .transparent-drag {
+      height: 24px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+      cursor: pointer;
+      -webkit-app-region: drag;
+      background: linear-gradient(140deg, transparent, #6bd1fe, #bd34fe);
+      opacity: .4;
+    }
+  </style>
   <body>
+    <div class="transparent-drag"></div>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
