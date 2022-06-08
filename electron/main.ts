@@ -2,6 +2,10 @@ import path from 'path'
 import { app, BrowserWindow } from 'electron'
 
 let win: BrowserWindow
+// Here, you can also use other preload
+const splash = path.join(__dirname, './splash.js')
+// 🚧 Use ['ENV_NAME'] avoid vite:define plugin
+const url = `http://${process.env['VITE_DEV_SERVER_HOST']}:${process.env['VITE_DEV_SERVER_PORT']}`
 
 function createWindow() {
   win = new BrowserWindow({
@@ -10,7 +14,7 @@ function createWindow() {
     webPreferences: {
       contextIsolation: false,
       nodeIntegration: true,
-      preload: path.join(__dirname, '../electron-preload/index.js'),
+      preload: splash,
     },
   })
 
@@ -22,9 +26,6 @@ function createWindow() {
   if (app.isPackaged) {
     win.loadFile(path.join(__dirname, '../index.html'))
   } else {
-    // 🚧 Use ['ENV_NAME'] avoid vite:define plugin
-    const url = `http://${process.env['VITE_DEV_SERVER_HOST']}:${process.env['VITE_DEV_SERVER_PORT']}`
-
     win.loadURL(url)
   }
 }
