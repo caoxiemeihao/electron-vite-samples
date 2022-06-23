@@ -1,7 +1,7 @@
 import path from 'path'
 import { app, BrowserWindow } from 'electron'
 
-let win: BrowserWindow
+let win: BrowserWindow | null
 // Here, you can also use other preload
 const splash = path.join(__dirname, './splash.js')
 // 🚧 Use ['ENV_NAME'] avoid vite:define plugin
@@ -9,8 +9,6 @@ const url = `http://${process.env['VITE_DEV_SERVER_HOST']}:${process.env['VITE_D
 
 function createWindow() {
   win = new BrowserWindow({
-    frame: false,
-    transparent: true,
     webPreferences: {
       contextIsolation: false,
       nodeIntegration: true,
