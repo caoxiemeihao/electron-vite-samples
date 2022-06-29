@@ -20,3 +20,10 @@ npm install
 # develop
 npm run dev
 ```
+
+## 🚨 `dependencies` vs `devDependencies`
+
+- Put Node.js packages in `dependencies`
+- Put Web packages in `devDependencies`
+
+See more 👉 [dependencies vs devDependencies](https://github.com/electron-vite/vite-plugin-electron-renderer#dependencies-vs-devdependencies)
