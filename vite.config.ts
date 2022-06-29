@@ -2,7 +2,6 @@ import fs from 'fs'
 import path from 'path'
 import { defineConfig } from 'vite'
 import electron from 'vite-plugin-electron'
-import renderer from 'vite-plugin-electron/renderer'
 
 fs.rmSync('dist', { recursive: true, force: true }) // v14.14.0
 
@@ -14,11 +13,12 @@ export default defineConfig({
       },
       preload: {
         input: {
-          // Must be use absolute path, this is the restrict of rollup
-          splash: path.join(__dirname, 'electron/splash.ts'),
+          // Must be use absolute path, this is the restrict of Rollup
+          preload: path.join(__dirname, 'electron/preload.ts'),
         },
       },
+      // Enables use of Node.js API in the Electron-Renderer
+      renderer: {},
     }),
-    renderer(),
   ],
 })
