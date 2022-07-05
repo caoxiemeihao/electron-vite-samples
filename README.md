@@ -27,3 +27,19 @@ npm run dev
 - Put Web packages in `devDependencies`
 
 See more 👉 [dependencies vs devDependencies](https://github.com/electron-vite/vite-plugin-electron-renderer#dependencies-vs-devdependencies)
+
+## 🚨 ESM packages
+
+**e.g.** `node-fetch` `execa` `got` ...others
+
+1. `npm i vite-plugin-esmodule -D`
+2. Configure in vite.config.ts
+
+```ts
+import esmodule from 'vite-plugin-esmodule'
+export default {
+  plugins: [
+    esmodule(['got', 'execa', 'node-fetch']),
+  ],
+}
+```
