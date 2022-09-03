@@ -10,7 +10,8 @@
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
-    "outDir": "dist"
+    "outDir": "dist",
+    "types": ["vite-plugin-electron/electron-env"]
   },
-  "include": ["src/**/*.ts", "vite.config.ts"]
+  "include": ["electron", "src", "vite.config.ts"]
 }
