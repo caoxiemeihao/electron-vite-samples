@@ -1,12 +1,8 @@
 import { join } from 'path'
 import { app, BrowserWindow } from 'electron'
 
-export const ROOT_PATH = {
-  // /dist
-  dist: join(__dirname, '..'),
-  // /dist or /public
-  public: join(__dirname, app.isPackaged ? '../..' : '../../../public'),
-}
+process.env.DIST = join(__dirname, '..')
+process.env.PUBLIC = app.isPackaged ? process.env.DIST : join(process.env.DIST, '../public')
 
 let win: BrowserWindow | null
 // Here, you can also use other preload
@@ -16,7 +12,7 @@ const url = process.env['VITE_DEV_SERVER_URL']
 
 function createWindow() {
   win = new BrowserWindow({
-    icon: join(ROOT_PATH.public, 'logo.svg'),
+    icon: join(process.env.PUBLIC, 'logo.svg'),
     webPreferences: {
       contextIsolation: false,
       nodeIntegration: true,
@@ -30,7 +26,7 @@ function createWindow() {
   })
 
   if (app.isPackaged) {
-    win.loadFile(join(ROOT_PATH.dist, 'index.html'))
+    win.loadFile(join(process.env.DIST, 'index.html'))
   } else {
     win.loadURL(url)
   }
