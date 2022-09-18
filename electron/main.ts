@@ -1,8 +1,17 @@
-import { join } from 'path'
-import { app, BrowserWindow } from 'electron'
-
+// The built directory structure
+//
+// ├─┬ dist
+// │ ├─┬ electron
+// │ │ ├── main.js
+// │ │ └── preload.js
+// │ ├── index.html
+// │ ├── ...other-static-files-from-public
+// │
 process.env.DIST = join(__dirname, '..')
 process.env.PUBLIC = app.isPackaged ? process.env.DIST : join(process.env.DIST, '../public')
+
+import { join } from 'path'
+import { app, BrowserWindow } from 'electron'
 
 let win: BrowserWindow | null
 // Here, you can also use other preload
