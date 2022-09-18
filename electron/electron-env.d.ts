@@ -8,10 +8,8 @@ declare namespace NodeJS {
      * ```tree
      * ├─┬ dist
      * │ ├─┬ electron
-     * │ │ ├─┬ main
-     * │ │ │ └── index.js
-     * │ │ └─┬ preload
-     * │ │   └── index.js
+     * │ │ ├── main.js
+     * │ │ └── preload.js
      * │ ├── index.html
      * │ ├── ...other-static-files-from-public
      * │
