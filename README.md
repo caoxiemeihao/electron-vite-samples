@@ -1,3 +1,5 @@
+# Migration to 👉 [electron-vite-boilerplate](https://github.com/electron-vite/electron-vite-boilerplate)
+
 ![screenshort.png](https://github.com/electron-vite/vite-plugin-electron-quick-start/blob/main/public/screenshort.png?raw=true)
 
 ## Overview
