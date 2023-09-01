@@ -11,7 +11,7 @@ declare namespace NodeJS {
      * │ │ ├── main.js
      * │ │ └── preload.js
      * │ ├── index.html
-     * │ ├── ...others
+     * │ ├── ...other-static-files-from-public
      * │
      * ```
      */
