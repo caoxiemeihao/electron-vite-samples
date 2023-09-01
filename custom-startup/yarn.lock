@@ -1652,10 +1652,10 @@ verror@^1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-vite-plugin-electron@^0.14.0-beta.0:
-  version "0.14.0-beta.0"
-  resolved "https://registry.yarnpkg.com/vite-plugin-electron/-/vite-plugin-electron-0.14.0-beta.0.tgz#12137332f19d3a718e8a89aaa5e209e3699d1d4c"
-  integrity sha512-iuDELdShQnvsQ/g21dSK5rblZG6c57TSnwCfCzPLaVlExv2u63N+n3nZNODQE8UKCg/QKvhJaJcR3k/ZDadd/A==
+vite-plugin-electron@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-electron/-/vite-plugin-electron-0.14.0.tgz#bd9cac98b5c440acfc531ce5ca6a817d5a9993d4"
+  integrity sha512-LhrK6kMtfmGjYLeAETYonddZE0cdb3FpoiRXjtXo3be0+KTewj2IzDh7ppBcgaycZ1/oLbIiupGrySSMC0wtQg==
 
 vite@^4.4.9:
   version "4.4.9"

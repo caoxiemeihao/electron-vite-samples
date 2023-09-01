@@ -47,6 +47,7 @@ function createWindow() {
 }
 
 app.on('window-all-closed', () => {
+  app.quit()
   win = null
 })
 

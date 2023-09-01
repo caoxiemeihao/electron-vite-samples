@@ -1,16 +1,18 @@
 import { defineConfig } from 'vite'
-import electron from 'vite-plugin-electron'
+import electron from 'vite-plugin-electron/simple'
 
 export default defineConfig({
   plugins: [
     electron({
-      entry: 'electron/main.ts',
-      onstart(args) {
-        console.log('Doing something before start....')
+      main: {
+        entry: 'electron/main.ts',
+        onstart(args) {
+          console.log('Doing something before start....')
 
-        // Start Electron App
-        args.startup(['.', '--no-sandbox'])
-      },
+          // Start Electron App
+          args.startup(['.', '--no-sandbox'])
+        },
+      }
     }),
   ],
 })
