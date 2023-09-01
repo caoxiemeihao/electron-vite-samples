@@ -1,0 +1,28 @@
+{
+  "name": "sqllite3-main-process",
+  "version": "0.0.0",
+  "main": "dist-electron/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caoxiemeihao/electron-vite-samples",
+    "directory": "sqllite3-main-process"
+  },
+  "author": "草鞋没号 <308487730@qq.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && electron-builder"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.7",
+    "electron": "^26.1.0",
+    "electron-builder": "^24.6.3",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9",
+    "vite-plugin-electron": "^0.14.0"
+  }
+}

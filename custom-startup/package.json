@@ -1,0 +1,26 @@
+{
+  "name": "custom-startup",
+  "version": "0.0.0",
+  "main": "dist-electron/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caoxiemeihao/electron-vite-samples",
+    "directory": "custom-startup"
+  },
+  "author": "草鞋没号 <308487730@qq.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && electron-builder"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.5.7",
+    "electron": "^26.1.0",
+    "electron-builder": "^24.6.3",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9",
+    "vite-plugin-electron": "^0.14.0-beta.0"
+  }
+}
