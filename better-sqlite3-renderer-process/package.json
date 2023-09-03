@@ -1,0 +1,31 @@
+{
+  "name": "better-sqlite3-renderer-process",
+  "version": "0.0.0",
+  "main": "dist-electron/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caoxiemeihao/electron-vite-samples",
+    "directory": "better-sqlite3-renderer-process"
+  },
+  "author": "草鞋没号 <308487730@qq.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && electron-builder",
+    "rebuild": "electron rebuild.js",
+    "postinstall": "npm run rebuild"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.4",
+    "@types/node": "^20.5.7",
+    "better-sqlite3": "^8.6.0",
+    "electron": "^26.1.0",
+    "electron-builder": "^24.6.3",
+    "serialport": "^12.0.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9",
+    "vite-plugin-electron": "^0.14.0",
+    "vite-plugin-electron-renderer": "^0.14.5"
+  }
+}
