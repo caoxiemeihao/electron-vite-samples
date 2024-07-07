@@ -1,6 +1,7 @@
 import path from 'node:path'
 import { defineConfig } from 'vite'
 import electron from 'vite-plugin-electron/simple'
+import native from 'vite-plugin-native'
 
 export default defineConfig({
   plugins: [
@@ -8,11 +9,11 @@ export default defineConfig({
       main: {
         entry: 'electron/main.ts',
         vite: {
-          build: {
-            rollupOptions: {
-              external: ['sqlite3'],
-            },
-          },
+          plugins: [
+            native({
+              webpack: {},
+            }),
+          ],
         },
       },
       preload: {

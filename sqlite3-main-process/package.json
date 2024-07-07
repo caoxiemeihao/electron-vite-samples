@@ -14,15 +14,15 @@
     "dev": "vite",
     "build": "vite build && electron-builder"
   },
-  "dependencies": {
-    "sqlite3": "^5.1.6"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@types/node": "^20.5.7",
-    "electron": "^26.1.0",
-    "electron-builder": "^24.6.3",
-    "typescript": "^5.2.2",
-    "vite": "^4.4.9",
-    "vite-plugin-electron": "^0.14.0"
+    "@types/node": "^20.14.10",
+    "electron": "^31.1.0",
+    "electron-builder": "^24.13.3",
+    "sqlite3": "^5.1.7",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.3",
+    "vite-plugin-electron": "^0.28.7",
+    "vite-plugin-native": "^2.2.1"
   }
 }
