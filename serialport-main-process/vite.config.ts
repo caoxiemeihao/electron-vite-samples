@@ -9,7 +9,6 @@ export default defineConfig({
         entry: 'electron/main.ts',
         vite: {
           build: {
-            minify: false,
             rollupOptions: {
               external: ['serialport'],
             },
