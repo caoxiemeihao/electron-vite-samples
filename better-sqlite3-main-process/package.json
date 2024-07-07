@@ -17,14 +17,13 @@
     "postinstall": "npm run rebuild"
   },
   "devDependencies": {
-    "@types/better-sqlite3": "^7.6.4",
-    "@types/node": "^20.5.7",
-    "better-sqlite3": "^8.6.0",
-    "electron": "^26.1.0",
-    "electron-builder": "^24.6.3",
-    "serialport": "^12.0.0",
-    "typescript": "^5.2.2",
-    "vite": "^4.4.9",
-    "vite-plugin-electron": "^0.14.0"
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^20.14.10",
+    "better-sqlite3": "^11.1.2",
+    "electron": "^31.1.0",
+    "electron-builder": "^24.13.3",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.3",
+    "vite-plugin-electron": "^0.28.0"
   }
 }
