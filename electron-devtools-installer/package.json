@@ -1,0 +1,32 @@
+{
+  "name": "electron-devtools-installer",
+  "version": "0.0.0",
+  "main": "dist-electron/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caoxiemeihao/electron-vite-samples",
+    "directory": "electron-devtools-installer"
+  },
+  "author": "草鞋没号 <308487730@qq.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && electron-builder"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react-swc": "^3.7.0",
+    "electron": "^31.1.0",
+    "electron-builder": "^24.13.3",
+    "electron-devtools-installer": "^3.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.3",
+    "vite-plugin-electron": "^0.28.7"
+  }
+}
