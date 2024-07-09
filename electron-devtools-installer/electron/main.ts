@@ -48,7 +48,12 @@ function createWindow() {
 
 // https://github.com/MarshallOfSound/electron-devtools-installer/tree/v3.2.0?tab=readme-ov-file#usage
 function installExtensions() {
-  return [REACT_DEVELOPER_TOOLS, REDUX_DEVTOOLS].map((extension) => installExtension(extension)
+  return [
+    REACT_DEVELOPER_TOOLS,
+    REDUX_DEVTOOLS,
+  ].map((extension) => installExtension(extension, {
+    loadExtensionOptions: { allowFileAccess: true },
+  })
     .then((name) => console.log('Added Extension:', name))
     .catch((err) => console.log('An error occurred:', err)))
 }
